@@ -25,7 +25,7 @@ class ForgotPassword extends Component
 
     public function mount() {
         if(auth()->user()){
-            redirect('/dashboard_momentum');
+            redirect('/dashboard-momentum');
         }
     }
 

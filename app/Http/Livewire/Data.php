@@ -53,7 +53,7 @@ class Data extends Component
         //         'achievement'=>  $request->achievement,
         //         'target'=>  $request->target,
         //     ]);
-        //     return redirect('/list_content')->with('message', 'Data Updated Successfully');
+        //     return redirect('/list-content')->with('message', 'Data Updated Successfully');
         // }else {
         //     return redirect()->back()->with('error', 'Achievement Must Be Smaller Or Equal With Target');
         // }
@@ -64,9 +64,9 @@ class Data extends Component
             'achievement'=>  $request->achievement,
             'target'=>  $request->target,
         ]);
-        return redirect('/list_content')->with('message', 'Data Updated Successfully');
+        return redirect('/list-content')->with('message', 'Data Updated Successfully');
 
-        // return redirect('/list_content')->with('error', 'Achievement Must Be Smaller Or Same With Target');
+        // return redirect('/list-content')->with('error', 'Achievement Must Be Smaller Or Same With Target');
         // return redirect()->back()->with('message', 'Data has been successfully updated');
     }
 

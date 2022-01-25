@@ -1,3 +1,4 @@
+{{-- {{dd($content_id)}} --}}
 @section('content')
 <div>
   @extends('layouts.app')
@@ -22,7 +23,32 @@
                 <div class="card-header pb-0 p-3">
                   <div class="row">
                     <div class="col-6 d-flex align-items-center">
-                      <h6 class="mb-0">Fill in the details below (Number only)</h6>
+                      @if ($content_id == 1)
+                      {{-- <span style="color:red;">(Current total weightage = 0)</span> --}}
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>SALES & REVENUE - ANNUAL SALES (RM)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 2)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>HR - MANPOWER (pax)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 3)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>DATABASE (pax)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 4)
+                        <h6 class="mb-0">Fill in the details below for<span style="color:red;"><b></b></span>  (Number only)</h6>
+                      @elseif ($content_id == 5)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>ULTIMATE PARTNERS (pax)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 6)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>ULTIMATE PLUS (pax)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 7)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>PLATINUM (pax)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 8)
+                        <h6 class="mb-0">Fill in the details below for<span style="color:red;"><b></b></span>  (Number only)</h6>
+                      @elseif ($content_id == 9)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>Facebook (Likes)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 10)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>Youtube (Subscribers)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 11)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>Instagram (Followers)</b></span> (Number only)</h6>
+                      @elseif ($content_id == 12)
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>Tiktok (Followers)</b></span> (Number only)</h6>
+                      @endif 
                     </div>
                   </div>
                 </div>
@@ -34,7 +60,7 @@
                       <div class="card card-plain border-radius-lg align-items-center">
                         {{-- <input type="text" class="form-control" id="achievement" name="achievement"> --}}
                         {{-- <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_achievement w-75" id="achievement" name="achievement" min="0" > --}}
-                        <input type="text" pattern="[0-9]+" maxlength="10"  class="form-control" id="achievement" name="achievement" min="0" >
+                        <input type="text" pattern="[0-9]+" maxlength="13"  class="form-control" id="achievement" name="achievement" min="0" >
                         @error('achievement') <div class="text-danger">{{ $message }}</div> @enderror
                       </div>
                     </div>
@@ -44,7 +70,7 @@
                         <div class="card card-plain border-radius-lg align-items-center">
                           {{-- <input type="text" class="form-control" id="target" name="target"> --}}
                           {{-- <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_target w-75" id="target" name="target" min="0" > --}}
-                          <input type="text" pattern="[1-9]+" maxlength="10"  class="form-control" id="target" name="target" min="1" >
+                          <input type="text" pattern="[0-9]+" maxlength="13"  class="form-control" id="target" name="target" min="1" >
                           @error('target') <div class="text-danger">{{ $message }}</div> @enderror                        
                         </div>
                     </div>

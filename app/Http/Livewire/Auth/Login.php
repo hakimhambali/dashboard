@@ -18,7 +18,7 @@ class Login extends Component
 
     public function mount() {
         if(auth()->user()){
-            redirect('/dashboard_momentum');
+            redirect('/dashboard-momentum');
         }
         $this->fill(['email' => 'admin@softui.com', 'password' => 'secret']);
     }
@@ -28,7 +28,7 @@ class Login extends Component
         if(auth()->attempt(['email' => $this->email, 'password' => $this->password], $this->remember_me)) {
             $user = User::where(["email" => $this->email])->first();
             auth()->login($user, $this->remember_me);
-            return redirect()->intended('/dashboard_momentum');        
+            return redirect()->intended('/dashboard-momentum');        
         }
         else{
             return $this->addError('email', trans('auth.failed')); 

@@ -38,10 +38,10 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement1/$target1)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement1/$target1)*100) )  <= 20) 
                     {{-- {{dd('johnif')}} --}}
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-sm  font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-sm  font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement1/$target1)*100) ) }}%</span>
                     </div>
                     @else
                     {{-- {{dd('johnelse')}} --}}
@@ -107,9 +107,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement2/$target2)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement2/$target2)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement2/$target2)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -168,9 +168,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement3/$target3)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement3/$target3)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement3/$target3)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -237,9 +237,10 @@
             </div>
           </div>
         </div> --}}
-        <div class="card mb-2">
+        {{-- <div class="card mb-2"> --}}
+          <hr>
           <h4>Membership</h4>
-          <div class="row">
+          {{-- <div class="row"> --}}
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-6">
           <div class="card">
             <div class="card-body p-3">
@@ -279,9 +280,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement5/$target5)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement5/$target5)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement5/$target5)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -340,9 +341,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement6/$target6)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement6/$target6)*100) )  <= 20)  
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement6/$target6)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -401,9 +402,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement7/$target7)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement7/$target7)*100) )  <= 20)  
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement7/$target7)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -475,12 +476,13 @@
             </div>
           </div>
         </div> --}}
-      </div>
-    </div>
+      {{-- </div>
+    </div> --}}
         {{-- <h4>Social Media</h4> --}}
-        <div class="card mb-4">
+        {{-- <div class="card mb-4"> --}}
+          <hr>
           <h4>Social Media</h4>
-          <div class="row">
+          {{-- <div class="row"> --}}
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-6">
           <div class="card">
             <div class="card-body p-3">
@@ -520,9 +522,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement9/$target9)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement9/$target9)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement9/$target9)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -581,9 +583,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement10/$target10)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement10/$target10)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement10/$target10)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -642,9 +644,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement11/$target11)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement11/$target11)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement11/$target11)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -703,9 +705,9 @@
                     </h5>
                     <br>
 
-                    @if (number_format( (integer)(($achievement12/$target12)*100) )  == 0) 
+                    @if (number_format( (integer)(($achievement12/$target12)*100) )  <= 20) 
                     <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div>
+                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement12/$target12)*100) ) }}%</span>
                     </div>
                     @else
                     <div class="progress">
@@ -725,8 +727,8 @@
             </div>
           </div>
         </div>
-      </div>
-      </div>      
+      {{-- </div>
+      </div>       --}}
     </div>
 
 

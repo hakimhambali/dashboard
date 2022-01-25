@@ -40,7 +40,7 @@ class ListContent extends Component
         $target11 = Data_::where('id', '=', '11')->value('target');
         $target12 = Data_::where('id', '=', '12')->value('target');
 
-        return view('livewire.list_content', compact('achievement1', 'achievement2', 'achievement3', 'achievement4', 'achievement5', 'achievement6', 
+        return view('livewire.list-content', compact('achievement1', 'achievement2', 'achievement3', 'achievement4', 'achievement5', 'achievement6', 
         'achievement7', 'achievement8', 'achievement9', 'achievement10', 'achievement11', 'achievement12', 'target1', 'target2', 'target3', 
         'target4', 'target5', 'target6', 'target7', 'target8', 'target9', 'target10', 'target11', 'target12'));
     }

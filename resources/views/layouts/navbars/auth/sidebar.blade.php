@@ -3,7 +3,7 @@
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute right-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
-        <a class="navbar-brand m-0" href="{{ route('dashboard_momentum') }}">
+        <a class="navbar-brand m-0" href="{{ route('dashboard-momentum') }}">
             <img src="assets/img/favicon2.ico" class="navbar-brand-img h-100" alt="...">
             <span class="ms-1 font-weight-bold">Dashboard Momentum</span>
         </a>
@@ -139,7 +139,7 @@
                                                 d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z"
                                                 id="Shape"></path>
                                         </g>
-                                    </g>
+                                </g>
                                 </g>
                             </g>
                         </svg>
@@ -149,8 +149,8 @@
             </li> --}}
 
             <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'list_content' ? 'active' : '' }}"
-                    href="{{ route('list_content') }}">
+                <a class="nav-link {{ Route::currentRouteName() == 'list-content' ? 'active' : '' }}"
+                    href="{{ route('list-content') }}">
                     <div
                         class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"
@@ -178,8 +178,8 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'dashboard_momentum' ? 'active' : '' }}"
-                    href="{{ route('dashboard_momentum') }}">
+                <a class="nav-link {{ Route::currentRouteName() == 'dashboard-momentum' ? 'active' : '' }}"
+                    href="{{ route('dashboard-momentum') }}">
                     <div
                         class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"

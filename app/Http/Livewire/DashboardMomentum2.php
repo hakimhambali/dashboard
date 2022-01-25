@@ -10,7 +10,7 @@ use Illuminate\Support\Carbon;
 use App\Models\User;
 use App\Models\Data_;
 
-class DashboardMomentum extends Component
+class DashboardMomentum2 extends Component
 {   
     public function render()
     {
@@ -66,7 +66,7 @@ class DashboardMomentum extends Component
         $digit_target11 = strlen($target11);
         $digit_target12 = strlen($target12);
 
-        return view('livewire.dashboard-momentum', compact('achievement1', 'achievement2', 'achievement3', 'achievement4', 'achievement5', 'achievement6', 
+        return view('livewire.dashboard-momentum2', compact('achievement1', 'achievement2', 'achievement3', 'achievement4', 'achievement5', 'achievement6', 
         'achievement7', 'achievement8', 'achievement9', 'achievement10', 'achievement11', 'achievement12', 'target1', 'target2', 'target3', 
         'target4', 'target5', 'target6', 'target7', 'target8', 'target9', 'target10', 'target11', 'target12', 'digit_achievement1', 'digit_achievement2',
         'digit_achievement3', 'digit_achievement4', 'digit_achievement5', 'digit_achievement6', 'digit_achievement7', 'digit_achievement8', 'digit_achievement9',

@@ -20,7 +20,7 @@ class SignUp extends Component
 
     public function mount() {
         if(auth()->user()){
-            redirect('/dashboard_momentum');
+            redirect('/dashboard-momentum');
         }
     }
 
@@ -34,7 +34,7 @@ class SignUp extends Component
 
         auth()->login($user);
 
-        return redirect('/dashboard_momentum');
+        return redirect('/dashboard-momentum');
     }
 
     public function render()

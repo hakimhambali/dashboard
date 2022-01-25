@@ -8,6 +8,7 @@ use App\Http\Livewire\Auth\SignUp;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\DashboardMomentum;
+use App\Http\Livewire\DashboardMomentum2;
 use App\Http\Livewire\Billing;
 use App\Http\Livewire\Profile;
 use App\Http\Livewire\Tables;
@@ -37,6 +38,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', Login::class)->name('login');
+Route::get('/dash', DashboardMomentum2::class)->name('dash');
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');
 Route::get('/login', Login::class)->name('login');
@@ -50,10 +52,10 @@ Route::middleware('auth')->group(function () {
 
     //startAdd
     // Route::get('/data', Data::class)->name('data');
-    Route::get('/list_content', ListContent::class)->name('list_content');
+    Route::get('/list-content', ListContent::class)->name('list-content');
     Route::get('/employee/edit/content/{content_id}', [Data::class, 'data_edit']);
     Route::post('/employee/update/content/{content_id}', [Data::class, 'data_update']);
-    Route::get('/dashboard_momentum', DashboardMomentum::class)->name('dashboard_momentum');
+    Route::get('/dashboard-momentum', DashboardMomentum::class)->name('dashboard-momentum');
     // Route::post('/employee/save/data',[Data::class, 'data_save']);
     //finishAdd
 

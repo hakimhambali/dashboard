@@ -60,7 +60,13 @@
                 @yield('content')
                 @include('layouts.footers.guest.with-socials')
             </div>
+        @elseif (!auth()->check() && in_array(request()->route()->getName(),['dash'],))
+        <div>
+            @if (isset($slot))
+            {{ $slot }} 
         @endif
+        </div>
+    @endif
     @endguest
 
     {{-- @livewireScripts --}}

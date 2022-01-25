@@ -87,7 +87,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab"
-                                    aria-controls="dashboard_momentum" aria-selected="false">
+                                    aria-controls="dashboard-momentum" aria-selected="false">
                                     <svg class="text-dark" width="16px" height="16px" viewBox="0 0 40 40" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <title>settings</title>
