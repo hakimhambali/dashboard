@@ -33,7 +33,8 @@
                       <p>Achievement</p>  
                       <div class="card card-plain border-radius-lg align-items-center">
                         {{-- <input type="text" class="form-control" id="achievement" name="achievement"> --}}
-                        <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_achievement w-75" id="achievement" name="achievement" min="0" >
+                        {{-- <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_achievement w-75" id="achievement" name="achievement" min="0" > --}}
+                        <input type="text" pattern="[0-9]+" maxlength="10"  class="form-control" id="achievement" name="achievement" min="0" >
                         @error('achievement') <div class="text-danger">{{ $message }}</div> @enderror
                       </div>
                     </div>
@@ -42,7 +43,8 @@
                         <p>Target</p> 
                         <div class="card card-plain border-radius-lg align-items-center">
                           {{-- <input type="text" class="form-control" id="target" name="target"> --}}
-                          <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_target w-75" id="target" name="target" min="0" >
+                          {{-- <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_target w-75" id="target" name="target" min="0" > --}}
+                          <input type="text" pattern="[1-9]+" maxlength="10"  class="form-control" id="target" name="target" min="1" >
                           @error('target') <div class="text-danger">{{ $message }}</div> @enderror                        
                         </div>
                     </div>
