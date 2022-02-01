@@ -27,11 +27,11 @@
                       {{-- <span style="color:red;">(Current total weightage = 0)</span> --}}
                         <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>SALES & REVENUE - ANNUAL SALES (RM)</b></span> (Number only)</h6>
                       @elseif ($content_id == 2)
-                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>HR - MANPOWER (Team)</b></span> (Number only)</h6>
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>HR - MANPOWER (Target 2022)</b></span> (Number only)</h6>
                       @elseif ($content_id == 3)
                         <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>DATABASE (pax)</b></span> (Number only)</h6>
                       @elseif ($content_id == 4)
-                        <h6 class="mb-0">Fill in the details below for<span style="color:red;"><b>HR - MANPOWER (Intern)</b></span> (Number only)</h6>
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>HR - MANPOWER (Currently)</b></span> (Number only)</h6>
                       @elseif ($content_id == 5)
                         <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>ULTIMATE PARTNERS (pax)</b></span> (Number only)</h6>
                       @elseif ($content_id == 6)
@@ -56,7 +56,11 @@
                   <div class="row">
                     <div class="col-md-6 mb-md-0">
                       {{-- <p>Achievement (Must be smaller or same than target)</p>   --}}
-                      <p>Achievement</p>  
+                      @if ($content_id == 4)
+                        <p>Team</p>
+                      @else  
+                        <p>Achievement</p>
+                      @endif  
                       <div class="card card-plain border-radius-lg align-items-center">
                         {{-- <input type="text" class="form-control" id="achievement" name="achievement"> --}}
                         {{-- <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_achievement w-75" id="achievement" name="achievement" min="0" > --}}
@@ -65,8 +69,11 @@
                       </div>
                     </div>
                     <div class="col-md-6 mb-md-0">
-                        {{-- <p>Target (Must be bigger or same than achievement)</p>  --}}
-                        <p>Target</p> 
+                      @if ($content_id == 4)
+                        <p>Intern</p>
+                      @else  
+                        <p>Target</p>
+                      @endif  
                         <div class="card card-plain border-radius-lg align-items-center">
                           {{-- <input type="text" class="form-control" id="target" name="target"> --}}
                           {{-- <input type="text" class="form-control" pattern="[0-9]+" maxlength="10" class="input_target w-75" id="target" name="target" min="0" > --}}

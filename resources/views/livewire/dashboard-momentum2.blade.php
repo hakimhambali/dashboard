@@ -38,7 +38,7 @@
                       {{-- <span style="font-size:14px";>{{$target1}}</span><span style="color:red;font-size:10px";> (target)</span> --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement1/$target1)*100) )  <= 13) 
                     {{-- {{dd('johnif')}} --}}
@@ -77,7 +77,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">HR - MANPOWER (Team)</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">HR-MANPOWER (Target 2022)</p>
                     <h5 class="font-weight-bolder mb-0">
 
                     @if ($digit_achievement2>9) 
@@ -109,7 +109,7 @@
                       {{-- {{$target2}}
                       <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement2/$target2)*100) )  <= 13) 
                     <div class="progress">
@@ -140,17 +140,17 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">HR - MANPOWER (Intern)</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">HR-MANPOWER (Currently)</p>
                     <h5 class="font-weight-bolder mb-0">
 
                     @if ($digit_achievement4>9) 
-                      <span style="font-size:14px";>{{ number_format( ($achievement4/1000000000), 2 ) }}B</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                      <span style="font-size:14px";>{{ number_format( ($achievement4/1000000000), 2 ) }}B</span><span style="color:blue;font-size:10px";> (team)</span>
                     @elseif ($digit_achievement4>6)
-                      <span style="font-size:14px";>{{ number_format( ($achievement4/1000000), 2 ) }}M</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                      <span style="font-size:14px";>{{ number_format( ($achievement4/1000000), 2 ) }}M</span><span style="color:blue;font-size:10px";> (team)</span>
                     @elseif ($digit_achievement4>3)
-                      <span style="font-size:14px";>{{ number_format( ($achievement4/1000), 2 ) }}K</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                      <span style="font-size:14px";>{{ number_format( ($achievement4/1000), 2 ) }}K</span><span style="color:blue;font-size:10px";> (team)</span>
                     @else
-                      <span style="font-size:14px";>{{$achievement4}}</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                      <span style="font-size:14px";>{{$achievement4}}</span><span style="color:blue;font-size:10px";> (team)</span>
                     @endif
 
                     </h5>
@@ -158,25 +158,26 @@
                     <h5 class="font-weight-bolder mb-0">
 
                     @if ($digit_target4>9) 
-                      <span style="font-size:14px";>{{ number_format( ($target4/1000000000), 2 ) }}B</span><span style="color:red;font-size:10px";> (target)</span>
+                      <span style="font-size:14px";>{{ number_format( ($target4/1000000000), 2 ) }}B</span><span style="color:red;font-size:10px";> (Intern)</span>
                     @elseif ($digit_target4>6)
-                      <span style="font-size:14px";>{{ number_format( ($target4/1000000), 2 ) }}M</span><span style="color:red;font-size:10px";> (target)</span>
+                      <span style="font-size:14px";>{{ number_format( ($target4/1000000), 2 ) }}M</span><span style="color:red;font-size:10px";> (Intern)</span>
                     @elseif ($digit_target4>3)
-                      <span style="font-size:14px";>{{ number_format( ($target4/1000), 2 ) }}K</span><span style="color:red;font-size:10px";> (target)</span>
+                      <span style="font-size:14px";>{{ number_format( ($target4/1000), 2 ) }}K</span><span style="color:red;font-size:10px";> (Intern)</span>
                     @else
-                      <span style="font-size:14px";>{{$target4}}</span><span style="color:red;font-size:10px";> (target)</span>
+                      <span style="font-size:14px";>{{$target4}}</span><span style="color:red;font-size:10px";> (Intern)</span>
                     @endif
                       
                     </h5>
                     <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement4/$target4)*100) )  <= 13) 
-                    <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement4/$target4)*100) ) }}%</span>
+                    <div>
+                      {{-- <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement4/$target4)*100) ) }}%</span> --}}
                     </div>
                     @else
-                    <div class="progress">
-                      <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ number_format( (integer)(($achievement4/$target4)*100) ) }}%;"><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement4/$target4)*100) ) }}%</span></div>
+                    <div>
+                      {{-- <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ number_format( (integer)(($achievement4/$target4)*100) ) }}%;"><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement4/$target4)*100) ) }}%</span></div> --}}
                     </div>
                     @endif
                     
@@ -227,7 +228,7 @@
                       {{-- {{$target3}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement3/$target3)*100) )  <= 13) 
                     <div class="progress">
@@ -342,7 +343,7 @@
                       {{-- {{$target5}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement5/$target5)*100) )  <= 13) 
                     <div class="progress">
@@ -404,7 +405,7 @@
                       {{-- {{$target6}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement6/$target6)*100) )  <= 13)  
                     <div class="progress">
@@ -466,7 +467,7 @@
                       {{-- {{$target7}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement7/$target7)*100) )  <= 13)  
                     <div class="progress">
@@ -589,7 +590,7 @@
                       {{-- {{$target9}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement9/$target9)*100) )  <= 13) 
                     <div class="progress">
@@ -651,7 +652,7 @@
                       {{-- {{$target10}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement10/$target10)*100) )  <= 13) 
                     <div class="progress">
@@ -713,7 +714,7 @@
                       {{-- {{$target11}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement11/$target11)*100) )  <= 13) 
                     <div class="progress">
@@ -775,7 +776,7 @@
                       {{-- {{$target12}} --}}
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
-                    <br>
+                    {{-- <br> --}}
 
                     @if (number_format( (integer)(($achievement12/$target12)*100) )  <= 13) 
                     <div class="progress">
