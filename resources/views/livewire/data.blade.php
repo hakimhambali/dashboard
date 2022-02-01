@@ -27,7 +27,7 @@
                       {{-- <span style="color:red;">(Current total weightage = 0)</span> --}}
                         <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>SALES & REVENUE - ANNUAL SALES (RM)</b></span> (Number only)</h6>
                       @elseif ($content_id == 2)
-                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>HR - MANPOWER (Target 2022)</b></span> (Number only)</h6>
+                        <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>HR - MANPOWER (Recruitment)</b></span> (Number only)</h6>
                       @elseif ($content_id == 3)
                         <h6 class="mb-0">Fill in the details below for <span style="color:red;"><b>DATABASE (pax)</b></span> (Number only)</h6>
                       @elseif ($content_id == 4)

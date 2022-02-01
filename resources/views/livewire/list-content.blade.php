@@ -69,7 +69,7 @@
                         </div>
                       </td> --}}
                       <td>
-                        <p class="text-sm font-weight-bold mb-0">HR - MANPOWER (Target 2022)</p>
+                        <p class="text-sm font-weight-bold mb-0">HR - MANPOWER (Recruitment)</p>
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$achievement2}}</p>
