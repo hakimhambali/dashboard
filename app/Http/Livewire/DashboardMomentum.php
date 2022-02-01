@@ -14,6 +14,19 @@ class DashboardMomentum extends Component
 {   
     public function render()
     {
+        $updated1 = Data_::where('id', '=', '1')->value('updated_at');
+        $updated2 = Data_::where('id', '=', '2')->value('updated_at');
+        $updated3 = Data_::where('id', '=', '3')->value('updated_at');
+        $updated4 = Data_::where('id', '=', '4')->value('updated_at');
+        $updated5 = Data_::where('id', '=', '5')->value('updated_at');
+        $updated6 = Data_::where('id', '=', '6')->value('updated_at');
+        $updated7 = Data_::where('id', '=', '7')->value('updated_at');
+        $updated8 = Data_::where('id', '=', '8')->value('updated_at');
+        $updated9 = Data_::where('id', '=', '9')->value('updated_at');
+        $updated10 = Data_::where('id', '=', '10')->value('updated_at');
+        $updated11 = Data_::where('id', '=', '11')->value('updated_at');
+        $updated12 = Data_::where('id', '=', '12')->value('updated_at');
+
         $achievement1 = Data_::where('id', '=', '1')->value('achievement');
         $achievement2 = Data_::where('id', '=', '2')->value('achievement');
         $achievement3 = Data_::where('id', '=', '3')->value('achievement');
@@ -71,6 +84,7 @@ class DashboardMomentum extends Component
         'target4', 'target5', 'target6', 'target7', 'target8', 'target9', 'target10', 'target11', 'target12', 'digit_achievement1', 'digit_achievement2',
         'digit_achievement3', 'digit_achievement4', 'digit_achievement5', 'digit_achievement6', 'digit_achievement7', 'digit_achievement8', 'digit_achievement9',
         'digit_achievement10', 'digit_achievement11', 'digit_achievement12', 'digit_target1', 'digit_target2', 'digit_target3', 'digit_target4', 'digit_target5',
-        'digit_target6', 'digit_target7', 'digit_target8', 'digit_target9', 'digit_target10', 'digit_target11', 'digit_target12'));
+        'digit_target6', 'digit_target7', 'digit_target8', 'digit_target9', 'digit_target10', 'digit_target11', 'digit_target12', 'updated1', 'updated2', 'updated3', 
+        'updated4', 'updated5', 'updated6', 'updated7', 'updated8', 'updated9', 'updated10', 'updated11', 'updated12'));
     }
 }

@@ -69,7 +69,7 @@
                         </div>
                       </td> --}}
                       <td>
-                        <p class="text-sm font-weight-bold mb-0">HR - MANPOWER (pax)</p>
+                        <p class="text-sm font-weight-bold mb-0">HR - MANPOWER (Team)</p>
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$achievement2}}</p>
@@ -81,6 +81,23 @@
                         <div class="mt-3 d-flex">
                           <a href="{{ url('employee/edit/content/'.'2') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                             {{-- <a href="{{ url('employee/displaykpi/'.$dates->id.'/'.$dates->user_id.'/'.$dates->year.'/'.$dates->month) }}" type="button" class="btn bg-gradient-secondary w-auto me-2">View KPI Master</a> --}}
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">HR - MANPOWER (Intern)</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">{{$achievement4}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">{{$target4}}</p>
+                      </td>
+                      <td>
+                        <div class="mt-3 d-flex">
+                          <a href="{{ url('employee/edit/content/'.'4') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                         </div>
                       </td>
                     </tr>

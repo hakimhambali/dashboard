@@ -30,11 +30,11 @@
                                     </div>
                                     @error('password') <div class="text-danger">{{ $message }}</div> @enderror
                                 </div>
-                                <div class="form-check form-switch">
+                                {{-- <div class="form-check form-switch">
                                     <input wire:model="remember_me" class="form-check-input" type="checkbox"
                                         id="rememberMe">
                                     <label class="form-check-label" for="rememberMe">{{ __('Remember me') }}</label>
-                                </div>
+                                </div> --}}
                                 <div class="text-center">
                                     <button type="submit"
                                         class="btn bg-gradient-info w-100 mt-4 mb-0">{{ __('Sign in') }}</button>
