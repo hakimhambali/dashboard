@@ -141,13 +141,13 @@
                       <h5 class="font-weight-bolder mb-0">
   
                       @if ($digit_achievement4>9) 
-                        <span style="font-size:14px";>{{ number_format( ($achievement4/1000000000), 2 ) }}B</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                        <span style="font-size:14px";>{{ number_format( ($achievement4/1000000000), 2 ) }}B</span><span style="color:blue;font-size:10px";> (team)</span>
                       @elseif ($digit_achievement4>6)
-                        <span style="font-size:14px";>{{ number_format( ($achievement4/1000000), 2 ) }}M</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                        <span style="font-size:14px";>{{ number_format( ($achievement4/1000000), 2 ) }}M</span><span style="color:blue;font-size:10px";> (team)</span>
                       @elseif ($digit_achievement4>3)
-                        <span style="font-size:14px";>{{ number_format( ($achievement4/1000), 2 ) }}K</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                        <span style="font-size:14px";>{{ number_format( ($achievement4/1000), 2 ) }}K</span><span style="color:blue;font-size:10px";> (team)</span>
                       @else
-                        <span style="font-size:14px";>{{$achievement4}}</span><span style="color:blue;font-size:10px";> (achievement)</span>
+                        <span style="font-size:14px";>{{$achievement4}}</span><span style="color:blue;font-size:10px";> (team)</span>
                       @endif
   
                       </h5>
@@ -155,13 +155,13 @@
                       <h5 class="font-weight-bolder mb-0">
   
                       @if ($digit_target4>9) 
-                        <span style="font-size:14px";>{{ number_format( ($target4/1000000000), 2 ) }}B</span><span style="color:red;font-size:10px";> (target)</span>
+                        <span style="font-size:14px";>{{ number_format( ($target4/1000000000), 2 ) }}B</span><span style="color:red;font-size:10px";> (Intern)</span>
                       @elseif ($digit_target4>6)
-                        <span style="font-size:14px";>{{ number_format( ($target4/1000000), 2 ) }}M</span><span style="color:red;font-size:10px";> (target)</span>
+                        <span style="font-size:14px";>{{ number_format( ($target4/1000000), 2 ) }}M</span><span style="color:red;font-size:10px";> (Intern)</span>
                       @elseif ($digit_target4>3)
-                        <span style="font-size:14px";>{{ number_format( ($target4/1000), 2 ) }}K</span><span style="color:red;font-size:10px";> (target)</span>
+                        <span style="font-size:14px";>{{ number_format( ($target4/1000), 2 ) }}K</span><span style="color:red;font-size:10px";> (Intern)</span>
                       @else
-                        <span style="font-size:14px";>{{$target4}}</span><span style="color:red;font-size:10px";> (target)</span>
+                        <span style="font-size:14px";>{{$target4}}</span><span style="color:red;font-size:10px";> (Intern)</span>
                       @endif
                         
                       </h5>
