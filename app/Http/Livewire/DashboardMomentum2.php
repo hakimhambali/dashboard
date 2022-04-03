@@ -53,6 +53,10 @@ class DashboardMomentum2 extends Component
         $target11 = Data_::where('id', '=', '11')->value('target');
         $target12 = Data_::where('id', '=', '12')->value('target');
 
+        $active_membership1 = Data_::where('id', '=', '5')->value('active_membership');
+        $active_membership2 = Data_::where('id', '=', '6')->value('active_membership');
+        $active_membership3 = Data_::where('id', '=', '7')->value('active_membership');
+
         $digit_achievement1 = strlen($achievement1);
         $digit_achievement2 = strlen($achievement2);
         $digit_achievement3 = strlen($achievement3);
@@ -79,12 +83,17 @@ class DashboardMomentum2 extends Component
         $digit_target11 = strlen($target11);
         $digit_target12 = strlen($target12);
 
+        $active_membership_target1 = strlen($active_membership1);
+        $active_membership_target2 = strlen($active_membership2);
+        $active_membership_target3 = strlen($active_membership3);
+
         return view('livewire.dashboard-momentum2', compact('achievement1', 'achievement2', 'achievement3', 'achievement4', 'achievement5', 'achievement6', 
         'achievement7', 'achievement8', 'achievement9', 'achievement10', 'achievement11', 'achievement12', 'target1', 'target2', 'target3', 
         'target4', 'target5', 'target6', 'target7', 'target8', 'target9', 'target10', 'target11', 'target12', 'digit_achievement1', 'digit_achievement2',
         'digit_achievement3', 'digit_achievement4', 'digit_achievement5', 'digit_achievement6', 'digit_achievement7', 'digit_achievement8', 'digit_achievement9',
         'digit_achievement10', 'digit_achievement11', 'digit_achievement12', 'digit_target1', 'digit_target2', 'digit_target3', 'digit_target4', 'digit_target5',
         'digit_target6', 'digit_target7', 'digit_target8', 'digit_target9', 'digit_target10', 'digit_target11', 'digit_target12', 'updated1', 'updated2', 'updated3', 
-        'updated4', 'updated5', 'updated6', 'updated7', 'updated8', 'updated9', 'updated10', 'updated11', 'updated12'));
+        'updated4', 'updated5', 'updated6', 'updated7', 'updated8', 'updated9', 'updated10', 'updated11', 'updated12', 'active_membership1', 'active_membership1',
+        'active_membership2', 'active_membership3', 'active_membership_target1', 'active_membership_target2', 'active_membership_target3'));
     }
 }
