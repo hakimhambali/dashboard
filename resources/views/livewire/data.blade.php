@@ -82,6 +82,18 @@
                         </div>
                     </div>
                   </div>
+                  <br>
+                  @if ($content_id == 5 || $content_id == 6 || $content_id == 7)
+                  <div class="row">
+                    <div class="col-md-6 mb-md-0">
+                        <p>Active Membership</p>
+                        <div class="card card-plain border-radius-lg align-items-center">
+                          <input type="text" pattern="[0-9]+" maxlength="13"  class="form-control" id="active_membership" name="active_membership" min="1" >
+                          @error('active_membership') <div class="text-danger">{{ $message }}</div> @enderror                        
+                        </div>
+                    </div>
+                  </div>
+                  @endif
                 </div>
                 <div class="col-12 text-end p-3">
                   <button class="btn bg-gradient-dark mb-0" type="submit" href="javascript:;"><i class="fas fa-plus"></i>&nbsp;&nbsp;Save</button>

@@ -13,5 +13,6 @@ class Data_ extends Model
         'achievement',
         'target',
         'user_id',
+        'active_membership',
     ];
 }

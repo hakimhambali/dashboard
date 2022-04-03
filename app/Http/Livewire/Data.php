@@ -41,6 +41,7 @@ class Data extends Component
         $validatedData = $request->validate([
             'achievement' => ['required'],
             'target' => ['required'],
+            'active_membership' => ['required'],
         ]);
 
         // $achievement = $request->achievement;
@@ -63,6 +64,7 @@ class Data extends Component
             'created_at'=> Carbon::now(),
             'achievement'=>  $request->achievement,
             'target'=>  $request->target,
+            'active_membership'=>  $request->active_membership,
         ]);
         return redirect('/list-content')->with('message', 'Data Updated Successfully');
 

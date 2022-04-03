@@ -340,6 +340,18 @@
                     </h5>
                     {{-- <br> --}}
 
+                    <h5 class="font-weight-bolder mb-0">
+                    @if ($active_membership_target1>9) 
+                      <span style="font-size:14px";>{{ number_format( ($active_membership1/1000000000), 2 ) }}B</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                    @elseif ($active_membership_target1>6)
+                      <span style="font-size:14px";>{{ number_format( ($active_membership1/1000000), 2 ) }}M</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                    @elseif ($active_membership_target1>3)
+                      <span style="font-size:14px";>{{ number_format( ($active_membership1/1000), 2 ) }}K</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                    @else
+                      <span style="font-size:14px";>{{$active_membership1}}</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                    @endif
+                    </h5>
+
                     @if (number_format( (integer)(($achievement5/$target5)*100) )  <= 13) 
                     <div class="progress">
                       <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement5/$target5)*100) ) }}%</span>
@@ -402,6 +414,18 @@
                     </h5>
                     {{-- <br> --}}
 
+                    <h5 class="font-weight-bolder mb-0">
+                      @if ($active_membership_target2>9) 
+                        <span style="font-size:14px";>{{ number_format( ($active_membership2/1000000000), 2 ) }}B</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @elseif ($active_membership_target2>6)
+                        <span style="font-size:14px";>{{ number_format( ($active_membership2/1000000), 2 ) }}M</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @elseif ($active_membership_target2>3)
+                        <span style="font-size:14px";>{{ number_format( ($active_membership2/1000), 2 ) }}K</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @else
+                        <span style="font-size:14px";>{{$active_membership2}}</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @endif
+                    </h5>
+
                     @if (number_format( (integer)(($achievement6/$target6)*100) )  <= 13)  
                     <div class="progress">
                       <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span class="text-center text-sm font-weight-bolder">0%</span></div><span class="text-dark text-sm font-weight-bolder">{{ number_format( (integer)(($achievement6/$target6)*100) ) }}%</span>
@@ -463,6 +487,18 @@
                       {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
                     {{-- <br> --}}
+
+                    <h5 class="font-weight-bolder mb-0">
+                      @if ($active_membership_target3>9) 
+                        <span style="font-size:14px";>{{ number_format( ($active_membership3/1000000000), 2 ) }}B</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @elseif ($active_membership_target3>6)
+                        <span style="font-size:14px";>{{ number_format( ($active_membership3/1000000), 2 ) }}M</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @elseif ($active_membership_target3>3)
+                        <span style="font-size:14px";>{{ number_format( ($active_membership3/1000), 2 ) }}K</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @else
+                        <span style="font-size:14px";>{{$active_membership3}}</span><span style="color:purple;font-size:10px";> (active membership)</span>
+                      @endif
+                    </h5>
 
                     @if (number_format( (integer)(($achievement7/$target7)*100) )  <= 13)  
                     <div class="progress">

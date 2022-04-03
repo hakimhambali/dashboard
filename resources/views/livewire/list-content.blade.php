@@ -25,6 +25,7 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 ">Description</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Achievement</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Target</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Active Membership</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Edit</th>
                       {{-- <th></th> --}}
                     </tr>
@@ -49,6 +50,9 @@
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$target1}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
                       </td>
                       <td>
                         <div class="mt-3 d-flex">
@@ -78,6 +82,9 @@
                         <p class="text-sm font-weight-bold mb-0">{{$target2}}</p>
                       </td>
                       <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
+                      </td>
+                      <td>
                         <div class="mt-3 d-flex">
                           <a href="{{ url('employee/edit/content/'.'2') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                             {{-- <a href="{{ url('employee/displaykpi/'.$dates->id.'/'.$dates->user_id.'/'.$dates->year.'/'.$dates->month) }}" type="button" class="btn bg-gradient-secondary w-auto me-2">View KPI Master</a> --}}
@@ -94,6 +101,9 @@
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$target4}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
                       </td>
                       <td>
                         <div class="mt-3 d-flex">
@@ -119,6 +129,9 @@
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$target3}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
                       </td>
                       <td>
                         <div class="mt-3 d-flex">
@@ -171,6 +184,9 @@
                         <p class="text-sm font-weight-bold mb-0">{{$target5}}</p>
                       </td>
                       <td>
+                        <p class="text-sm font-weight-bold mb-0">{{$active_membership1}}</p>
+                      </td>
+                      <td>
                         <div class="mt-3 d-flex">
                           <a href="{{ url('employee/edit/content/'.'5') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                             {{-- <a href="{{ url('employee/displaykpi/'.$dates->id.'/'.$dates->user_id.'/'.$dates->year.'/'.$dates->month) }}" type="button" class="btn bg-gradient-secondary w-auto me-2">View KPI Master</a> --}}
@@ -197,6 +213,9 @@
                         <p class="text-sm font-weight-bold mb-0">{{$target6}}</p>
                       </td>
                       <td>
+                        <p class="text-sm font-weight-bold mb-0">{{$active_membership2}}</p>
+                      </td>
+                      <td>
                         <div class="mt-3 d-flex">
                           <a href="{{ url('employee/edit/content/'.'6') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                             {{-- <a href="{{ url('employee/displaykpi/'.$dates->id.'/'.$dates->user_id.'/'.$dates->year.'/'.$dates->month) }}" type="button" class="btn bg-gradient-secondary w-auto me-2">View KPI Master</a> --}}
@@ -221,6 +240,9 @@
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$target7}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">{{$active_membership3}}</p>
                       </td>
                       <td>
                         <div class="mt-3 d-flex">
@@ -272,6 +294,9 @@
                         <p class="text-sm font-weight-bold mb-0">{{$target9}}</p>
                       </td>
                       <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
+                      </td>
+                      <td>
                         <div class="mt-3 d-flex">
                           <a href="{{ url('employee/edit/content/'.'9') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                             {{-- <a href="{{ url('employee/displaykpi/'.$dates->id.'/'.$dates->user_id.'/'.$dates->year.'/'.$dates->month) }}" type="button" class="btn bg-gradient-secondary w-auto me-2">View KPI Master</a> --}}
@@ -295,6 +320,9 @@
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$target10}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
                       </td>
                       <td>
                         <div class="mt-3 d-flex">
@@ -322,6 +350,9 @@
                         <p class="text-sm font-weight-bold mb-0">{{$target11}}</p>
                       </td>
                       <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
+                      </td>
+                      <td>
                         <div class="mt-3 d-flex">
                           <a href="{{ url('employee/edit/content/'.'11') }}" class="btn bg-gradient-warning w-auto me-2" role="button">Edit</a>
                             {{-- <a href="{{ url('employee/displaykpi/'.$dates->id.'/'.$dates->user_id.'/'.$dates->year.'/'.$dates->month) }}" type="button" class="btn bg-gradient-secondary w-auto me-2">View KPI Master</a> --}}
@@ -345,6 +376,9 @@
                       </td>
                       <td>
                         <p class="text-sm font-weight-bold mb-0">{{$target12}}</p>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0"></p>
                       </td>
                       <td>
                         <div class="mt-3 d-flex">
