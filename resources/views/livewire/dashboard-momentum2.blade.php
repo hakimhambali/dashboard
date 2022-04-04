@@ -503,7 +503,7 @@
                       @else
                         <span style="font-size:14px";>{{$active_membership3}}</span><span style="color:purple;font-size:10px";> (active membership)</span>
                       @endif
-                     </h5>
+                    </h5>
 
                     @if (number_format( (integer)(($achievement7/$target7)*100) )  <= 13)  
                     <div class="progress">
