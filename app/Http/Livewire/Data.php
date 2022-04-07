@@ -38,12 +38,18 @@ class Data extends Component
     public function data_update(Request $request, $content_id){
 
         // dd($content_id);
+        if ($content_id == 5 || $content_id == 6 || $content_id == 7) {
+            $validatedData = $request->validate([
+                'achievement' => ['required'],
+                'target' => ['required'],
+                'active_membership' => ['required'],
+            ]);
+        }
+
         $validatedData = $request->validate([
             'achievement' => ['required'],
             'target' => ['required'],
-            'active_membership' => ['required'],
         ]);
-
         // $achievement = $request->achievement;
         // $target = $request->target;
 

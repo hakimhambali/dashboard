@@ -93,7 +93,7 @@ class DashboardMomentum2 extends Component
         'digit_achievement3', 'digit_achievement4', 'digit_achievement5', 'digit_achievement6', 'digit_achievement7', 'digit_achievement8', 'digit_achievement9',
         'digit_achievement10', 'digit_achievement11', 'digit_achievement12', 'digit_target1', 'digit_target2', 'digit_target3', 'digit_target4', 'digit_target5',
         'digit_target6', 'digit_target7', 'digit_target8', 'digit_target9', 'digit_target10', 'digit_target11', 'digit_target12', 'updated1', 'updated2', 'updated3', 
-        'updated4', 'updated5', 'updated6', 'updated7', 'updated8', 'updated9', 'updated10', 'updated11', 'updated12', 'active_membership1', 'active_membership1',
-        'active_membership2', 'active_membership3', 'active_membership_target1', 'active_membership_target2', 'active_membership_target3'));
+        'updated4', 'updated5', 'updated6', 'updated7', 'updated8', 'updated9', 'updated10', 'updated11', 'updated12', 'active_membership1', 'active_membership2',
+        'active_membership3', 'active_membership_target1', 'active_membership_target2', 'active_membership_target3'));
     }
 }
