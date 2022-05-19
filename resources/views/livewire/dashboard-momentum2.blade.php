@@ -1,3 +1,5 @@
+{{-- @php $value = Session::get('user') @endphp
+{{dd($value)}} --}}
 {{-- {{dd('john')}} --}}
 <main>  
     <div class="container-fluid py-4">

@@ -5,7 +5,21 @@
         {{-- If the user is authenticated on the static sign up or the sign up page --}}
         @if (auth()->user()->role == 'admin')
             @include('layouts.navbars.auth.sidebar')
-            {{-- @include('livewire.form_kpi') --}}
+            @include('layouts.navbars.auth.nav')
+            @include('components.plugins.fixed-plugin')
+            @if (isset($slot))
+                {{ $slot }} 
+            @endif
+            @yield('content')
+            <main>
+                <div class="container-fluid">
+                    <div class="row">
+                        @include('layouts.footers.auth.footer')
+                    </div>
+                </div>
+            </main>
+        @elseif (Route::currentRouteName() != 'dash')
+            @include('layouts.navbars.auth.sidebar')
             @include('layouts.navbars.auth.nav')
             @include('components.plugins.fixed-plugin')
             @if (isset($slot))
@@ -20,22 +34,19 @@
                 </div>
             </main>
         @else
-            @include('layouts.navbars.auth.sidebar')
-            {{-- @include('livewire.form_kpi') --}}
-            @include('layouts.navbars.auth.nav')
-            @include('components.plugins.fixed-plugin')
-            @if (isset($slot))
-                {{ $slot }} 
-            @endif
-            @yield('content')
-            <main>
-                <div class="container-fluid">
-                    <div class="row">
-                        @include('layouts.footers.auth.footer')
-                    </div>
-                </div>
-            </main>
+        @include('components.plugins.fixed-plugin')
+        @if (isset($slot))
+            {{ $slot }} 
         @endif
+        @yield('content')
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    @include('layouts.footers.auth.footer')
+                </div>
+            </div>
+        </main>
+    @endif
     @endauth
 
     {{-- If the user is not authenticated (if the user is a guest) --}}

@@ -4,7 +4,8 @@
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute right-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="{{ route('dashboard-momentum') }}">
-            <img src="assets/img/favicon2.ico" class="navbar-brand-img h-100" alt="...">
+            {{-- <img src="assets/img/favicon2.ico" class="navbar-brand-img h-100" alt="..."> --}}
+            <img src="{{ url('assets/img/favicon2.ico')}}" class="navbar-brand-img h-100" alt="...">
             <span class="ms-1 font-weight-bold">Dashboard Momentum</span>
         </a>
     </div>
@@ -202,13 +203,13 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Dashboard</span>
+                    <span class="nav-link-text ms-1">Dashboard for PIC</span>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'dash' ? 'active' : '' }}"
-                    href="{{ route('dash') }}" target="_blank">
+                    href="{{ route('dash') }}">
                     <div
                         class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"
@@ -231,7 +232,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Dashboard All</span>
+                    <span class="nav-link-text ms-1">Dashboard for All</span>
                 </a>
             </li>
 
