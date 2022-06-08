@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\LaravelExamples;
+namespace App\Http\Livewire\UserManagements;
 
 use Livewire\Component;
 use App\Models\User;
@@ -11,7 +11,6 @@ class UserManagementFormWire extends Component
     public $id_user;
     public $name;
     public $email;
-    // public $role;
     public $password;
     public $model_id;
     public $action;
@@ -25,8 +24,6 @@ class UserManagementFormWire extends Component
         $this->name = $user->name;
         $this->email = $user->email;
         $this->password = $user->password;
-        // $this->role = $user->role;
-        // $this->created_at = $user->created_at;
     }
 
     public function store()
@@ -76,7 +73,6 @@ class UserManagementFormWire extends Component
     
     public function render()
     {
-        return view('livewire.laravel-examples.user-management-form-wire');
-        // return view('livewire.laravel-examples.user-management')->with(compact('userscount', 'users'));
+        return view('livewire.user-managements.user-management-form-wire');
     }
 }

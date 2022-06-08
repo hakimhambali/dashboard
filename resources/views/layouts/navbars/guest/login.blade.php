@@ -43,11 +43,12 @@
                         Sign In
                     </a>
                 </li>
+
             </ul>
             <ul class="navbar-nav d-lg-block d-none">
                 <li class="nav-item">
                     <a href="https://momentuminternet.com/"
-                        class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark" target="_blank">Momentum Internet</a>
+                        class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark" target="_blank">momentuminternet.com</a>
                 </li>
             </ul>
         </div>

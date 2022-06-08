@@ -6,39 +6,20 @@ use App\Http\Livewire\Auth\ForgotPassword;
 use App\Http\Livewire\Auth\ResetPassword;
 use App\Http\Livewire\Auth\SignUp;
 use App\Http\Livewire\Auth\Login;
-use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\DashboardMomentum;
 use App\Http\Livewire\DashboardMomentum2;
-use App\Http\Livewire\Billing;
-use App\Http\Livewire\Profile;
-use App\Http\Livewire\Tables;
-use App\Http\Livewire\StaticSignIn;
-use App\Http\Livewire\StaticSignUp;
-use App\Http\Livewire\Rtl;
 
 //startAdd
 use App\Http\Livewire\Data;
 use App\Http\Livewire\ListContent;
-//finishAdd
-
-use App\Http\Livewire\LaravelExamples\UserProfile;
-use App\Http\Livewire\LaravelExamples\UserManagement;
+use App\Http\Livewire\ContentManagement;
+use App\Http\Livewire\UserManagements\UserProfile;
+use App\Http\Livewire\UserManagements\UserManagement;
 
 use Illuminate\Http\Request;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', Login::class)->name('login');
-Route::get('/dash', DashboardMomentum2::class)->name('dash');
+Route::get('/dashboard/guest', DashboardMomentum2::class)->name('dash');
 
 Route::get('/sign-up', SignUp::class)->name('sign-up');
 Route::get('/login', Login::class)->name('login');
@@ -47,25 +28,21 @@ Route::get('/login/forgot-password', ForgotPassword::class)->name('forgot-passwo
  
 Route::get('/reset-password/{id}',ResetPassword::class)->name('reset-password')->middleware('signed');
 
+// content CRUD
+Route::post('/content-management/create', [ContentManagement::class, 'create']);
+Route::get('/content-management/edit/{id}', [ContentManagement::class, 'edit'])->name('content-edit');
+Route::post('/content-management/update/{id}', [ContentManagement::class, 'update']);
+
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', Dashboard::class)->name('dashboard');
-
     //startAdd
-    // Route::get('/data', Data::class)->name('data');
     Route::get('/list-content', ListContent::class)->name('list-content');
-    Route::get('/employee/edit/content/{content_id}', [Data::class, 'data_edit']);
-    Route::post('/employee/update/content/{content_id}', [Data::class, 'data_update']);
+    Route::get('/employee/edit/content/{id}', [Data::class, 'data_edit']);
+    Route::post('/employee/update/content/{id}', [Data::class, 'data_update']);
     Route::get('/dashboard-momentum', DashboardMomentum::class)->name('dashboard-momentum');
-    // Route::post('/employee/save/data',[Data::class, 'data_save']);
     //finishAdd
-
-    Route::get('/billing', Billing::class)->name('billing');
-    Route::get('/profile', Profile::class)->name('profile');
-    Route::get('/tables', Tables::class)->name('tables');
-    Route::get('/static-sign-in', StaticSignIn::class)->name('sign-in');
-    Route::get('/static-sign-up', StaticSignUp::class)->name('static-sign-up');
-    Route::get('/rtl', Rtl::class)->name('rtl');
-    Route::get('/laravel-user-profile', UserProfile::class)->name('user-profile');
-    Route::get('/laravel-user-management', UserManagement::class)->name('user-management');
+    
+    Route::get('/user-profile', UserProfile::class)->name('user-profile');
+    Route::get('/user-management', UserManagement::class)->name('user-management');
+    Route::get('/content-management', ContentManagement::class)->name('content-management');
 });
 
